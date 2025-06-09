@@ -5,7 +5,7 @@ import threading
 class CSVLogger:
     def __init__(self, symbol):
         self.symbol = symbol
-        self.filename = f"{symbol}_prices.csv"
+        self.filename = f"data/{symbol}_prices.csv"
         self.lock = threading.Lock()
         # Write header once
         with open(self.filename, mode='w', newline='') as file:

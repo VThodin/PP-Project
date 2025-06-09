@@ -3,6 +3,7 @@ from alerts import check_alerts
 import time
 from data_logger import CSVLogger
 import threading
+import ctypes
 
 def track_stock(symbol, feed, enable_plot=False):
     prices = []
@@ -24,4 +25,5 @@ def track_stock(symbol, feed, enable_plot=False):
         print(f"{symbol} - Price: {price}, MA: {ma}, RSI: {rsi}")
         for alert in alerts:
             print(">>>", alert)
+            ctypes.windll.user32.MessageBoxW(0, alert, "RSI ALERT", 0)
         time.sleep(1)
