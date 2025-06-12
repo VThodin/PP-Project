@@ -10,7 +10,7 @@ class CSVLogger:
         # Write header once
         with open(self.filename, mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(['timestamp', 'price'])
+            writer.writerow(['timestamp', 'price', 'ma', 'rsi'])
 
     def log_price(self, price):
         timestamp = datetime.now().isoformat()
