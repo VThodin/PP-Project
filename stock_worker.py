@@ -11,9 +11,9 @@ def track_stock(symbol, feed, enable_plot=False):
     prices = []
     logger = CSVLogger(symbol)
     minute_prices = []  # Store 1 price per minute
-    
 
-    now = datetime.now()
+    last_minute = datetime.now().minute
+    
 
     while True:
         price = feed.get_latest_price(symbol)
