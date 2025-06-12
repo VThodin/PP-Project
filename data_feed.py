@@ -1,9 +1,7 @@
-import requests
-import time
 import websocket
 import json
 import threading
-from collections import defaultdict, deque
+from collections import deque
 
 class StockDataFeed:
     def __init__(self, symbols, api_key, buffer_size=100):

@@ -6,6 +6,9 @@ from datetime import datetime
 
 API_KEY = "d0qm5shr01qg1llahlfgd0qm5shr01qg1llahlg0"
 STOCKS = [
+    'AAPL','MSFT','GOOGL','AMZN','TSLA','NVDA']
+
+STOCKS2 = [
     'AAPL','MSFT','GOOGL','AMZN','META','TSLA','NVDA',
     'JPM','BAC','WFC','C',
     'PFE','JNJ','MRK','ABBV',
