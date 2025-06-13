@@ -2,7 +2,8 @@ import websocket
 import json
 import threading
 from collections import deque
-
+"""This file handles the communication with finnhub
+It is set to run forever until the terminal is terminated"""
 class StockDataFeed:
     def __init__(self, symbols, api_key, buffer_size=100):
         self.symbols = symbols

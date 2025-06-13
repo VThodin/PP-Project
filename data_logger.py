@@ -2,6 +2,8 @@ import csv
 from datetime import datetime
 import threading
 
+"""This file is used for writing down the data and saving it to a csv file.
+When restarting the program it wrties ower what has previously been in the file"""
 class CSVLogger:
     def __init__(self, symbol):
         self.symbol = symbol

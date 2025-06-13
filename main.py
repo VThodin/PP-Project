@@ -4,6 +4,12 @@ from stock_worker import track_stock
 from visualize import MultiStockPlotter
 from datetime import datetime
 
+"""This file is used to start the project and different threads.
+Stocks that we want to track are given as a list.
+This file aslso starts a plot tracking the development of all the stocks, altough
+it is not very useful if you don't run the program for a long time or only track one stock
+or two with similar starting prices."""
+
 API_KEY = "d0qm5shr01qg1llahlfgd0qm5shr01qg1llahlg0"
 STOCKS = [
     'AAPL','MSFT','GOOGL','AMZN','TSLA','NVDA']

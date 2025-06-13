@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
+"""This file tries to make a predication according to the previous prices"""
 def predict_next(prices, past_window=10 ,offset=5):
     if len(prices) < past_window: return None
     x = np.array(past_window).reshape(-1, 1)

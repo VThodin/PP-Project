@@ -3,6 +3,7 @@ from data_feed import StockDataFeed
 from indicators import moving_average, compute_rsi
 from alerts import check_alerts
 from data_logger import CSVLogger
+"""main_norm is used to run a simple non parallel version of the program"""
 
 API_KEY = "d0qm5shr01qg1llahlfgd0qm5shr01qg1llahlg0"
 STOCKS = [

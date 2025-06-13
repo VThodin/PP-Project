@@ -1,5 +1,6 @@
 import numpy as np
 
+#This file does the calculations for moving average and rsi.
 def moving_average(data, period=5):
     if len(data) < period:
         return None

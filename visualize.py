@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from collections import deque
 
+"""Contains visualization code, one that tracks only one stock if that is an option that
+is desired and one that tracks all stocks."""
 class LivePlotter:
     def __init__(self, symbol, feed, max_points=100):
         self.symbol = symbol

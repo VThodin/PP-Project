@@ -6,7 +6,7 @@ import threading
 import ctypes
 from predictors import predict_next
 from datetime import datetime, timedelta
-
+"""This file does the main work for every stock, it uses the other files to get prices, give alerts, predictions and prints to terminal all info"""
 def track_stock(symbol, feed, enable_plot=False):
     prices = []
     logger = CSVLogger(symbol)
