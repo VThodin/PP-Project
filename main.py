@@ -10,7 +10,7 @@ This file aslso starts a plot tracking the development of all the stocks, altoug
 it is not very useful if you don't run the program for a long time or only track one stock
 or two with similar starting prices."""
 
-API_KEY = "d0qm5shr01qg1llahlfgd0qm5shr01qg1llahlg0"
+API_KEY = "***********************************************"
 STOCKS = [
     'AAPL','MSFT','GOOGL','AMZN','TSLA','NVDA']
 
