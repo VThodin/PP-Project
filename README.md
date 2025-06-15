@@ -1,4 +1,4 @@
-Project in parallell programming course.
+Project in parallel programming course.
 
 By:
 Viktor Thodin, Thomas Segercrantz, Kalle Fjäder
