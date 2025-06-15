@@ -34,6 +34,8 @@ def track_stock(symbol, feed, enable_plot=False):
         prediction = predict_next(minute_prices, past_window=10, offset=5)
         if prediction:
             print(f"[{symbol}] 5-min Prediction: {prediction:.2f}")
+            #ctypes.windll.user32.MessageBoxW(0, symbol, prediction, "Predication alert", 0)
+            #Not really tested and stock market is not open right now to test it.
 
         alerts = check_alerts(symbol, price, ma, rsi)
 
